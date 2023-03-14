@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #8d8d8d;
+}
+
+.App {
+  height: 100dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#drum-machine {
+  padding: 2em;
+  outline: 5px solid orange;
+  background-color: #b3b3b3;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+    "display display display"
+    "q         w         e"
+    "a         s         d"
+    "z         x         c";
+  grid-gap: 0.3em;
+}
+
+#display {
+  grid-area: display;
+  background-color: grey;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 1em;
+  font-family: "Russo One", sans-serif;
+  font-size: 1rem;
+}
+
+.drum-pad {
+  padding: 2em 2.5em;
+  background-color: grey;
+  border: none;
+  box-shadow: black 3px 3px 5px;
+  cursor: pointer;
+  font-family: "Russo One", sans-serif;
+  font-size: 1rem;
+}
+
+.drum-pad:active {
+  background-color: orange;
+  box-shadow: orange 3px 3px 5px;
+}
+
+.active {
+  background-color: orange;
+  box-shadow: orange 3px 3px 5px;
+}
